@@ -8,6 +8,7 @@ import (
 	"github.com/facebookgo/grace/gracehttp"
 	"github.com/golang/glog"
 	"github.com/bborbe/now"
+	"time"
 )
 
 const (
@@ -36,11 +37,11 @@ func do() error {
 			Addr: fmt.Sprintf(":%d", *portPtr),
 			Handler: http.HandlerFunc(func(resp http.ResponseWriter, req *http.Request) {
 				n := now.Now{
-					Locations: []string{
-						"Atlantic/Azores",
-						"UTC",
-						"Atlantic/Canary",
-						"Europe/Berlin",
+					Locations: []*time.Location{
+						time.FixedZone("Atlantic/Azores", 0),
+						time.FixedZone("UTC", 0),
+						time.FixedZone("Atlantic/Canary", 3600),
+						time.FixedZone("Europe/Berlin", 7200),
 					},
 				}
 				resp.Header().Set("Content-Type", "text/plain/json")
