@@ -21,10 +21,6 @@ func main() {
 			glog.Exitf("location not found %s", name)
 		}
 		locations = append(locations, location)
-
 	}
-	n := now.Now{
-		Locations: locations,
-	}
-	n.Write(os.Stdout)
+	now.Write(os.Stdout)
 }
