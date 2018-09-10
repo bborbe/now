@@ -30,7 +30,7 @@ func do() error {
 		&http.Server{
 			Addr: fmt.Sprintf(":%d", *portPtr),
 			Handler: http.HandlerFunc(func(resp http.ResponseWriter, req *http.Request) {
-				resp.Header().Set("Content-Type", "text/plain/json")
+				resp.Header().Set("Content-Type", "text/plain")
 				now.Write(resp)
 			}),
 		},
