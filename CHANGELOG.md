@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## 1.2.1
+
+- Remove duplicate
+
 ## 1.2.0
 
 - Use global list of locations for now
