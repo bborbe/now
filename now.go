@@ -13,6 +13,8 @@ var Locations = []*time.Location{
 	time.FixedZone("UTC", 0),
 	time.FixedZone("Atlantic/Canary", 3600),
 	time.FixedZone("Europe/Berlin", 7200),
+	time.FixedZone("Europe/Berlin", 7200),
+	time.FixedZone("IST", 19800),
 }
 
 func Write(writer io.Writer) {
