@@ -1,9 +1,10 @@
 package main
 
 import (
-	"github.com/bborbe/now"
 	"os"
 	"runtime"
+
+	"github.com/bborbe/now"
 )
 
 func main() {

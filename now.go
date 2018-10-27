@@ -2,10 +2,10 @@ package now
 
 import (
 	"fmt"
+	"io"
 	"time"
 
 	"github.com/golang/glog"
-	"io"
 )
 
 var Locations = []*time.Location{
