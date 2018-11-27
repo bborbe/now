@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## 1.3.0
+
+- Use timezones information from alpine
+- Refactoring
+
 ## 1.2.1
 
 - Remove duplicate
